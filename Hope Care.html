@@ -34,11 +34,13 @@
 	}
     .logo-text p  { 
 		font-size: 12px;
-		opacity: .85; }
+		opacity: 0.85; }
 
     nav ul { 
 		list-style:none;
-		display: flex; gap: 24px; 
+		display: flex; 
+		gap: 24px; 
+		flex wrap: wrap;
 	}
     nav ul li a {
       color: white;
@@ -60,7 +62,6 @@
     .news-section,
 	.blog{
 		margin-bottom: 60px;
-		padding: 50px 60px; 
 	}
     .news-section h2,
     .blog h2{
@@ -79,7 +80,7 @@
     border: 1px solid #ddd;
 	border-radius: 12px;
 	overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 	transition: transform 0.2s ease;
     }
     .news-card:hover,
@@ -88,7 +89,7 @@
 	}
     .news-card:img,
 	.blog-card:img{
-     height: 160px;
+     height: 180px;
 	 background: #228B22;
      display: flex;
 	align-items: center;
@@ -119,7 +120,8 @@
 		color: #333;
 		margin-bottom: 10px;
 	}
-    .news-card-body p,blog-body p  {
+    .news-card-body p,
+	.blog-body p  {
 		font-size: 15px;
 		color: #555;
 		line-height: 1.7; 
@@ -170,7 +172,7 @@
 	  flex-wrap:wrap;
 	  gap:12px;
       font-size: 14px;
-	  color: #666;
+	  color: #777;
     } 
 		@media (max-width: 980px) {
         header,
@@ -202,6 +204,7 @@
         .blog-grid {
           grid-template-columns: 1fr;
 		}
+	  }
   </style>
   </head>
 <body>
@@ -250,6 +253,59 @@
           </div>
         </div>
       </section>
+	<section class="departments" id="departments">
+        <h2>Departments</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-card-img">General Surgery</div>
+            <div class="news-card-body">
+              <h3>General Surgery</h3>
+              <p>Our General Surgery Department provides emergency and elective surgical care with expert surgeons and modern facilities.</p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card-img">Pediatrics</div>
+            <div class="news-card-body">
+              <h3>Pediatrics</h3>
+              <p>The Pediatrics Department delivers compassionate child healthcare, from routine checkups to specialist treatment for young patients.</p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card-img">Physiotherapy</div>
+            <div class="news-card-body">
+              <h3>Physiotherapy</h3>
+              <p>Our Physiotherapy team supports recovery and rehabilitation through tailored therapy plans and expert support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-card-img">Hospital Campus</div>
+            <div class="news-card-body">
+              <h3>Hospital Campus</h3>
+              <p>View our modern facilities and welcoming patient areas designed for comfort and healing.</p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card-img">Care Team</div>
+            <div class="news-card-body">
+              <h3>Care Team</h3>
+              <p>Our medical staff works together to ensure every patient receives compassionate, high-quality care.</p>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card-img">Community Events</div>
+            <div class="news-card-body">
+              <h3>Community Events</h3>
+              <p>HopeCare Hospital hosts public health events and outreach programs for our community.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="blog" id="about-us">
         <h2>Blog Posts</h2>
@@ -280,7 +336,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </main>  
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
