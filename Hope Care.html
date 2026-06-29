@@ -63,17 +63,17 @@
   max-width: 900px; margin: 60px auto;
 }
 .slides {
-  position: relative; /* changed from flex */
+  position: relative;
   width: 100%; height: 100%;
 }
 .slide {
-  position: absolute; top: 0; left: 0; /* lowercase + absolute */
+  position: absolute; top: 0; left: 0;
   width: 100%; height: 100%;
   display: flex; align-items: center; justify-content: center;
   font-size: 28px; font-weight: bold; color: white;
   opacity: 0;
-  transition: transform 0.6s ease, opacity 0.6s ease; /* fixed spacing */
-  transform: translateX(100%); /* start off-screen right */
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+  transform: translateX(100%); 
 }
 .slide.active {
   opacity: 1;
@@ -98,7 +98,7 @@
 .dot {
   width: 22px; height: 24px; border-radius: 50%;
   background: rgba(255,255,255,.5); cursor: pointer; border: none;
-  transition: background 0.6s; /* fixed spacing */
+  transition: background 0.6s; 
 }
 .dot.active { background: white; }
    
